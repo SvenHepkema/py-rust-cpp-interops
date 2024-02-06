@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <cstddef>
 
+#include "cuda_functions.cuh"
 #include "cuda_utils.cuh"
 
 // Kernel definition
