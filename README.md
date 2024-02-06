@@ -1,7 +1,11 @@
 # py-rust-cpp-interops
 
-This project is a prototype for testing how interoperability between python and Rust, and between Rust and C++ works. Goal of this project is to use the GPU with a C++ CUDA implementation via Rust in Python.
+This project demonstrates the interoperability between C, C++, Rust and Python via shared library files. A very simple CUDA function to add two vectors together is written in C++ and compiled to a shared library with a C interface. This library can then be used by programs written in C, Rust and Python, also demonstrating how these languages can make use of the GPU via C++.
 
-The project will allow the user to write in python code to subtract or add vectors. The vector object is interoperated with Rust, which will call the CUDA C++ code. The C++ code only implements two functions, one to add two vectors, and the other to subtract two vectors. 
+Functionality:
 
-Obviously it is also possible to do this directly by calling C++ code from python, but this project serves as a prototype to learn how both Python interoperates with Rust and how Rust interoperates with C++.
+- C++ code to sum two vectors together and store the result into a third vector using CUDA to make use of the GPU.
+- C code that interoperates with the C++ add vectors function.
+- Rust code that interoperates with the C++ add vectors function.
+- Python code that interoperates with the C++ add vectors function.
+- Python code that interoperates via Rust with the C++ add vectors function. (Double interoperation).
