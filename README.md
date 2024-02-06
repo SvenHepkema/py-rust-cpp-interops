@@ -8,4 +8,4 @@ Functionality:
 - C code that interoperates with the C++ add vectors function.
 - Rust code that interoperates with the C++ add vectors function.
 - Python code that interoperates with the C++ add vectors function.
-- Python code that interoperates via Rust with the C++ add vectors function. (Double interoperation).
+- Python code that interoperates via Rust (using [PyO3](https://github.com/PyO3/pyo3)) with the C++ add vectors function. (Double interoperation).
